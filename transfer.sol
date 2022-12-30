@@ -6,7 +6,7 @@ contract transfer{
 
     address public owner;
 
-    event transactions(address to, uint amount);
+    event transactions(address indexed to, uint indexed amount);
 
     constructor(){
         owner = msg.sender;
